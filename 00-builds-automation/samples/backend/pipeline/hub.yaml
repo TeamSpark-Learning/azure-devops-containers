@@ -1,0 +1,31 @@
+trigger: none
+    
+pool:
+  vmImage: 'ubuntu-18.04'
+
+steps:
+- task: DockerInstaller@0
+  displayName: Docker install
+  inputs:
+    dockerVersion: '17.09.0-ce'
+
+- task: Docker@2
+  displayName: Docker build
+  inputs:
+    containerRegistry: 'Docker Hub'
+    repository: 'boykoant/sample-aspnet'
+    command: 'build'
+    Dockerfile: '00-builds-automation/samples/backend/Dockerfile'
+    tags: |
+      $(Build.BuildNumber)
+      latest
+
+- task: Docker@2
+  displayName: Docker push
+  inputs:
+    containerRegistry: 'Docker Hub'
+    repository: 'boykoant/sample-aspnet'
+    command: 'push'
+    tags: |
+      $(Build.BuildNumber)
+      latest
