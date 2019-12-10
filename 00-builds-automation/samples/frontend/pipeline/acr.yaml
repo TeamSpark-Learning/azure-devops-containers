@@ -12,10 +12,11 @@ steps:
 - task: Docker@2
   displayName: Docker build
   inputs:
-    containerRegistry: 'Docker Hub'
+    containerRegistry: 'ACR'
     repository: 'boykoant/sample-node'
     command: 'build'
-    Dockerfile: '00-builds-automation/samples/frontend/Dockerfile'
+    Dockerfile: '00-builds-automation/samples/frontend/docker/Dockerfile'
+    buildContext: '00-builds-automation/samples/frontend/'
     tags: |
       $(Build.BuildNumber)
       latest
@@ -23,7 +24,7 @@ steps:
 - task: Docker@2
   displayName: Docker push
   inputs:
-    containerRegistry: 'Docker Hub'
+    containerRegistry: 'ACR'
     repository: 'boykoant/sample-node'
     command: 'push'
     tags: |
