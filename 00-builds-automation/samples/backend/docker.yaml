@@ -14,9 +14,15 @@ steps:
     repository: 'sample-aspnet'
     command: 'build'
     Dockerfile: '00-builds-automation/samples/backend/Dockerfile'
+    tags: |
+      $(Build.BuildNumber)
+      latest
 
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker Hub'
     repository: 'sample-aspnet'
     command: 'push'
+    tags: |
+      $(Build.BuildNumber)
+      latest
