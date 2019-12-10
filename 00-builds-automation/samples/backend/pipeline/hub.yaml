@@ -11,11 +11,12 @@ steps:
 
 - task: Docker@2
   displayName: Docker build
+  
   inputs:
     containerRegistry: 'Docker Hub'
     repository: 'boykoant/sample-aspnet'
     command: 'build'
-    Dockerfile: '00-builds-automation/samples/backend/docker/'
+    Dockerfile: '../docker/Dockerfile'
     buildContext: '00-builds-automation/samples/backend/src/'
     tags: |
       $(Build.BuildNumber)
