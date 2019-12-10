@@ -15,7 +15,7 @@ steps:
     containerRegistry: 'Docker Hub'
     repository: 'boykoant/sample-aspnet'
     command: 'build'
-    Dockerfile: '00-builds-automation/samples/backend/docker/Dockerfile'
+    Dockerfile: '00-builds-automation/samples/backend/docker/'
     buildContext: '00-builds-automation/samples/backend/src/'
     tags: |
       $(Build.BuildNumber)
