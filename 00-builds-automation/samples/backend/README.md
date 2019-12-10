@@ -2,7 +2,7 @@
 
 Build
 ```
-docker build -t boykoant/sample-aspnet:latest .
+docker build -t boykoant/sample-aspnet:latest -f ./docker/Dockerfile .
 ```
 
 Run

@@ -2,7 +2,7 @@
 
 Build
 ```
-docker build -t boykoant/sample-node:latest .
+docker build -t boykoant/sample-node:latest -f ./docker/Dockerfile .
 ```
 
 Run
