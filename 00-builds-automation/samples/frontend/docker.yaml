@@ -15,7 +15,7 @@ steps:
     containerRegistry: 'Docker Hub'
     repository: 'boykoant/sample-node'
     command: 'build'
-    Dockerfile: '00-builds-automation/samples/backend/Dockerfile'
+    Dockerfile: '00-builds-automation/samples/frontend/Dockerfile'
     tags: |
       $(Build.BuildNumber)
       latest
