@@ -16,7 +16,7 @@ steps:
     repository: 'boykoant/sample-aspnet'
     command: 'build'
     Dockerfile: '00-builds-automation/samples/backend/docker/Dockerfile'
-    buildContext: '00-builds-automation/samples/backend/src'
+    buildContext: '00-builds-automation/samples/backend/'
     tags: |
       $(Build.BuildNumber)
       latest
