@@ -1,5 +1,5 @@
-00-builds-automation/samples/backend/bin
-00-builds-automation/samples/backend/obj
-00-builds-automation/samples/backend/appsettings.Development.json
+00-builds-automation/samples/backend/src/bin
+00-builds-automation/samples/backend/src/obj
+00-builds-automation/samples/backend/src/appsettings.Development.json
 
-00-builds-automation/samples/frontend/node_modules
+00-builds-automation/samples/frontend/src/node_modules
