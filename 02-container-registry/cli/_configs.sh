@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AZ_SUBSCRIPTION="Microsoft Azure Sponsorship"
+AZ_SUBSCRIPTION="Trial"
 
 AZ_LOCATION="westeurope"
 AZ_RESOURCE_GROUP="aboyko.test"
