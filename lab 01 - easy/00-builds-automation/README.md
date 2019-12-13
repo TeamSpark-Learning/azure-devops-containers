@@ -27,3 +27,21 @@
 1. Connect source control to Azure DevOps.
 1. Connect Docker Hub to Azure DevOps.
 1. Create Azure DevOps pepeline, build and push Docker image to Docker Hub.
+
+
+
+# Useful materials
+
+- https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-dotnetcore-sqldb-app 
+
+- https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image 
+
+- https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops 
+
+- https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops 
+
+- https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-base-image-update 
+
+- https://docs.microsoft.com/en-us/azure/dev-spaces/get-started-netcore 
+
+- https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nested-virtualization 
