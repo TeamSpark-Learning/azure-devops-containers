@@ -1,0 +1,1 @@
+Lab consists of several parts, each of them can be found within dedicated folder.
